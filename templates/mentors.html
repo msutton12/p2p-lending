@@ -1,0 +1,18 @@
+<!-- templates/mentors.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mentors</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+<h1>Available Mentors 👩‍🏫👨‍🏫</h1>
+<ul>
+    {% for mentor in mentors %}
+    <li>{{ mentor }} <button>Apply for Mentorship</button></li>
+    {% endfor %}
+</ul>
+<a href="{{ url_for('home') }}">← Back to Home</a>
+</body>
+</html>
+

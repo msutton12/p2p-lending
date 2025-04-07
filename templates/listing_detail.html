@@ -1,0 +1,24 @@
+<!-- templates/listing_detail.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ listing.title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+<h1>{{ listing.title }}</h1>
+<p><strong>Founder:</strong> {{ listing.founder }}</p>
+<p><strong>Description:</strong> {{ listing.description }}</p>
+<p><strong>Funding Goal:</strong> {{ listing.goal }}</p>
+<p><strong>Raised So Far:</strong> {{ listing.raised }}</p>
+
+<form>
+    <label>Enter amount to fund:</label>
+    <input type="number" name="amount">
+    <button type="submit">Fund Now 💰</button>
+</form>
+
+<a href="{{ url_for('listings') }}">← Back to Listings</a>
+</body>
+</html>
+

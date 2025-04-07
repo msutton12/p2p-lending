@@ -1,0 +1,25 @@
+
+<!-- templates/account.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Account</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+<h1>Your Account</h1>
+<p>Username: <strong>demo_user</strong></p>
+
+<h2>My Listings</h2>
+<ul>
+    <li>Eco-friendly Coffee Truck</li>
+</ul>
+
+<h2>My Fundings</h2>
+<ul>
+    <li>AI Startup for Seniors - $100 funded</li>
+</ul>
+
+<a href="{{ url_for('home') }}">← Back to Home</a>
+</body>
+</html>
